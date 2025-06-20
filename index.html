@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Delicioso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="logo">Restaurante Delicioso</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservations">Reservas</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+            </ul>
+            <div class="language-switcher">
+                <select id="language-select">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero con Video -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="restaurant-video">
+                <source src="assets/video/restaurante.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay">
+                <h1>Bienvenido a Restaurante Delicioso</h1>
+                <p>Sabores que enamoran desde 1990</p>
+                <a href="#reservations" class="btn">Reserva Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Sobre Nosotros" -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <p>Fundado en 1990, nuestro restaurante combina tradición e innovación...</p>
+            <div class="philosophy">
+                <h3>Filosofía</h3>
+                <p>"Cada plato cuenta una historia, cada ingrediente tiene un propósito."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú del Restaurante (6 categorías con fotos) -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-categories">
+                <!-- Entradas -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-utensils"></i> Entradas</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/ceviche.jpg" alt="Ceviche">
+                        <div class="item-details">
+                            <h4>Ceviche Clásico</h4>
+                            <p>Pescado fresco marinado en limón, ají y cilantro.</p>
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="assets/img/empanadas.jpg" alt="Empanadas">
+                        <div class="item-details">
+                            <h4>Empanadas de Carne</h4>
+                            <p>Masa casera rellena de carne jugosa.</p>
+                            <span class="price">$8.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platos Principales -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-drumstick-bite"></i> Platos Principales</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/lomo-saltado.jpg" alt="Lomo Saltado">
+                        <div class="item-details">
+                            <h4>Lomo Saltado</h4>
+                            <p>Carne salteada con cebolla, tomate y papas fritas.</p>
+                            <span class="price">$18.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-ice-cream"></i> Postres</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/suspiro-limeño.jpg" alt="Suspiro Limeño">
+                        <div class="item-details">
+                            <h4>Suspiro Limeño</h4>
+                            <p>Dulce de leche con merengue y canela.</p>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-glass-martini-alt"></i> Bebidas</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/pisco-sour.jpg" alt="Pisco Sour">
+                        <div class="item-details">
+                            <h4>Pisco Sour</h4>
+                            <p>Bebida emblemática peruana.</p>
+                            <span class="price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menú Infantil -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-child"></i> Menú Infantil</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/nuggets.jpg" alt="Nuggets">
+                        <div class="item-details">
+                            <h4>Nuggets con Papas</h4>
+                            <p>Pollo empanizado con papas fritas.</p>
+                            <span class="price">$10.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Especiales del Chef -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-star"></i> Especiales del Chef</h3>
+                    <div class="menu-item">
+                        <img src="assets/img/risotto.jpg" alt="Risotto">
+                        <div class="item-details">
+                            <h4>Risotto de Hongos</h4>
+                            <p>Arroz cremoso con hongos silvestres.</p>
+                            <span class="price">$16.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horario -->
+    <section class="hours-section">
+        <div class="container">
+            <h2>Horario de Atención</h2>
+            <ul class="hours-list">
+                <li><i class="far fa-clock"></i> Lunes a Viernes: 11:00 AM - 10:00 PM</li>
+                <li><i class="far fa-clock"></i> Sábados y Domingos: 10:00 AM - 11:00 PM</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reservas Online -->
+    <section id="reservations" class="reservation-section">
+        <div class="container">
+            <h2>Reserva una Mesa</h2>
+            <form id="reservation-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <input type="date" required>
+                <input type="time" required>
+                <input type="number" placeholder="Número de personas" min="1" required>
+                <button type="submit" class="btn">Confirmar Reserva</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reseñas de Clientes -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2>Reseñas</h2>
+            <div class="review">
+                <div class="review-content">
+                    <p>"¡El mejor restaurante de la ciudad! La atención es increíble."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span class="review-author">- María G.</span>
+                </div>
+            </div>
+            <button id="add-review-btn" class="btn">Deja tu Reseña</button>
+            <div id="review-form" style="display: none;">
+                <textarea placeholder="Escribe tu reseña..."></textarea>
+                <button class="btn">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Mejorado -->
+    <div class="chatbot-icon" id="chatbot-trigger">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">
+                <p>¡Hola! 👋 ¿En qué puedo ayudarte hoy?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Restaurante Delicioso (ficticio).
+                Todos los derechos reservados.
+            web de ejemplo
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
